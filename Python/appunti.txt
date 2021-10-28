@@ -1,0 +1,4 @@
+FORUM: stack overflow
+SITO x documentazione: PYTHON 3 documentation
+
+GARBAGE COLLECTION: processo di pulizia degli oggetti orfani(non più accessibili)
