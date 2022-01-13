@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int numeroNonNegativo(char frase[]){
+    int n;
+
+    do{
+        printf("%s", frase);
+        fflush(stdin);
+        scanf("%d", &n);
+    }while(n < 0);
+
+    return n;
+}
+
+char inserisciCarattere(char frase[]){
+    char c;
+
+    printf("%s", frase);
+    fflush(stdin);
+    scanf("%c", &c);
+
+    return c;
+}
+
+void stampaVideo(int n, int c){
+    int k;
+
+    for(k = 0; k < n; k++){
+        printf("%c", c);
+    }
+}
+
+int main(){
+    int N;
+    char C;
+
+
+    N = numeroNonNegativo("Inserisci il numero di carattere da inserire: ");
+    printf("\n");
+    C = inserisciCarattere("Inserisci il carattere da stampare: ");
+    printf("\n");
+    stampaVideo(N, C);
+
+    printf("\n");
+    system("PAUSE");
+    return 0;
+}
