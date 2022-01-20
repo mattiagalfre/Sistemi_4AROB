@@ -15,9 +15,12 @@ class Stella():
         stella.penup()
         stella.goto(self.x, self.y)
         stella.pendown()
+        stella.fillcolor(0, 0, 0)
+        stella.begin_fill()
         for _ in range(5):
             stella.forward(self.dim)
             stella.right(144)
+        stella.end_fill()
 
 def main():
     for _ in range(50):
