@@ -1,4 +1,3 @@
 import random
 
-sorteggio = random.randint(1, 24)
-print(sorteggio)
+print(random.randint(1, 24))

@@ -24,9 +24,9 @@ class Stella():
 
 def main():
     for _ in range(50):
-        s = Stella(random.randint(-turtle.screensize()[0], turtle.screensize()[0]), random.randint(-turtle.screensize()[1], 
-                turtle.screensize()[1]), random.randint(10, 200))
+        s = Stella(random.randint(-turtle.screensize()[0], turtle.screensize()[0]), random.randint(-turtle.screensize()[1], turtle.screensize()[1]), random.randint(10, 200))
         s.creaStella()
+    
     cielo.exitonclick()
 
 if __name__ == "__main__":
